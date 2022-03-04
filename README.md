@@ -2,5 +2,5 @@
 
 ## Contributors 
 * Sandra Sou 
-* Anderson Peck 
-* Aclica Phong
+* Anderson Pech 
+* Alicia Phong
