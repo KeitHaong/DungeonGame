@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="29.0" layoutY="43.0" prefHeight="165.0" prefWidth="155.0">
+         <children>
+            <GridPane fx:id="Inventory" prefHeight="165.0" prefWidth="170.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children>
+      </HBox>
+      <HBox layoutX="371.0" layoutY="50.0" prefHeight="142.0" prefWidth="143.0">
+         <children>
+            <ImageView fx:id="ShowItem" fitHeight="150.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox layoutX="49.0" layoutY="249.0" prefHeight="125.0" prefWidth="125.0">
+         <children>
+            <GridPane fx:id="Store" prefHeight="125.0" prefWidth="71.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children>
+      </HBox>
+      <Label layoutX="56.0" layoutY="20.0" text="Inventory">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="214.0" text="Store">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="410.0" layoutY="302.0" mnemonicParsing="false" onAction="#HandleExit" text="ExitShop">
+         <font>
+            <Font name="Arial Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="Gold" layoutX="439.0" layoutY="19.0" prefHeight="16.0" prefWidth="82.0" text="0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="409.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/gold_pile.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Cost" layoutX="429.0" layoutY="240.0" prefHeight="20.0" prefWidth="54.0" text="0">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="Buy" layoutX="366.0" layoutY="237.0" mnemonicParsing="false" onAction="#BuyItem" text="Buy">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+      <VBox fx:id="Bought" layoutX="204.0" layoutY="18.0" maxHeight="200.0" maxWidth="132.0" prefHeight="200.0" prefWidth="132.0">
+         <children>
+            <GridPane fx:id="ItemBought" prefHeight="201.0" prefWidth="145.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children>
+      </VBox>
+      <Label layoutX="230.0" layoutY="6.0" text="Items Bought">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

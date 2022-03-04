@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="stone" layoutX="71.0" layoutY="188.0" mnemonicParsing="false" onAction="#Stone" text="Stone" textFill="#836a1f" textOverrun="CENTER_ELLIPSIS" />
+      <Button fx:id="grass" layoutX="280.0" layoutY="188.0" mnemonicParsing="false" onAction="#Grass" text="Grass" textFill="#3fa16e" />
+      <Button fx:id="wood" layoutX="496.0" layoutY="188.0" mnemonicParsing="false" onAction="#Wood" text="Water" textFill="#14efff" />
+      <ImageView fitHeight="150.0" fitWidth="174.0" layoutX="50.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/cobblestone.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="154.0" layoutX="273.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/32x32GrassAndDirtPath.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="103.0" layoutX="481.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/watergrass.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Menu" layoutX="285.0" layoutY="315.0" mnemonicParsing="false" onAction="#Menu" text="Menu">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
